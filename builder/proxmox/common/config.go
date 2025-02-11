@@ -201,6 +201,8 @@ type Config struct {
 	// 	Note: this option is for experts only.
 	AdditionalArgs string `mapstructure:"qemu_additional_args"`
 
+	BeforeStartHook []string `mapstructure:"before_start_hook"`
+	
 	// Used by clone builder StepMapSourceDisks to store existing disk assignments
 	CloneSourceDisks []string `mapstructure-to-hcl2:",skip"`
 
